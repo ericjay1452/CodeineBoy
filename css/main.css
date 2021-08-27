@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto+Mono:wght@300&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding:  0;
+    box-sizing: border-box;
+} 
+
+img {
+    display: block;
+    max-width:  100%;
+    height:  auto;
+}
+
+a {
+    display: block;
+    color: cadetblue;
+    text-decoration: none;
+    
+}
+
+body {
+    position: relative;
+    width:  100%;
+    display: block;
+    font-size:  100%;
+    background-color: #171717;
+    font-weight:  normal;
+    font-family:  'poppins' ,Arial, Helvetica, sans-serif;
+}
+
+.mobile {
+    display: none;
+}
+
+#container {
+    position: relative;
+    width:  100%;
+    display: block;
+}
+
+#sectionContainer {
+    display: flex;
+    width:  100%;
+    position: relative;
+    height: 100%;
+}
+
+#leftSection {
+    display: block;
+    position: fixed;
+    width:  5%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 100
+}
+
+.leftContainer {
+    position: relative;
+    display:  flex;
+    flex-direction: column;
+    height:  100%;
+}
+
+.siteName {
+    display: block;
+    height:  55px;
+    width:  100%;
+    margin-bottom:  30px;
+}
+
+.siteLogo {
+    position: relative;
+    display: block;
+}
+
+.siteLogoLink {
+   padding:  5px; 
+   position: relative;
+}
+
+.siteLogoLink .Home-icon,
+.all {
+    max-width:  100%;
+    width:  20px;
+    display: block;
+    margin:  auto;
+    height:  50px;
+    text-align: center;
+}
+
+.siteLogoLink:hover {
+   background-color: #e8e8e8;
+   transition:  all ease-in .3s;
+ }
+
+ .leftIcons {
+ height:  100%;
+ position: relative;
+ display: block;
+ }
+
+.leftIconsContainer {
+    display: block;
+    height:  100%;
+    position: relative;
+}
+
+.leftIconsNav {
+    position: relative;
+    width:  100%;
+}
+
+.leftIconsUl {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    list-style-type: none;
+}
+
+.leftIconsList{
+    display: block;
+    margin-top:  20px;
+    /* height:  40px; */
+    width:  100%;
+}
+
+ .leftIconsList  > .leftIconsLink {
+    height:  50px;
+    text-align: center;
+    color:  #414141;
+} 
+
+.leftIconsList:hover {
+    background-color: #e8e8e8;
+    transition:  all ease-in .3s;
+  }
+
+
+#middleSection {
+    position: relative;
+    width: 80%;
+    height:  100%;
+    background-color:  #3f3e3e;
+    margin-left: auto;
+}
+
+.pageIntroContainer {
+    background-color: #e8e8e8;
+}
+
+.mainContent {
+    width:  100%;
+    position: relative;
+    height:  100%;
+}
+
+.mainContainerLayer {
+    position: relative;
+    width:  100%;
+    display: block;
+}
+
+.formWrapper {
+    width:  80%;
+    display: block;
+    position: relative;
+    margin: auto;
+    margin-top:  20px;
+}
+
+.form {
+    position: relative;
+    display: flex;
+    width:  100%;
+}
+
+#search {
+    width:  80%;
+    display: block;
+    margin: auto;
+    height: 40px;
+    border-radius:  25px;
+    border:  none;
+    outline: none;
+    padding-top:  0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+input[type = "search"] {
+    text-align: center;
+    font-size:  1em;
+    font-weight:  500;
+    color: #414141;
+}
+
+.searchBtn {
+    width:  40px;
+    height:  40px;
+    outline: none;
+    border: none;
+    padding:  5px;
+    cursor: pointer;
+    border-radius:  50%;
+}
+
+.searchIcon {
+    max-width:  100%;
+    width:  20px;
+    height:  20px;
+    margin: auto;
+}
+
+.menuContainer {
+    position: relative;
+    width:  100%;
+    display: block;
+}
+
+.menuContainerLayer {
+    width:  100%;
+    display: block;
+    position: relative;
+    background-color:  #e8e8e8;
+    height:  50px;
+    margin-top:  30px;
+}
+
+.menuHeader {
+    position: relative;
+}
+
+.menuUl {
+    display: flex;
+    position: relative;
+    width:  100%;
+    justify-content: space-between;
+     list-style-type: none; 
+     align-items: stretch;
+     align-content: center;
+}
+
+.menuList {
+    position: relative;
+    display: block;
+}
+
+.menuListLink {
+    display: block;
+    padding:  5px 10px 5px 10px;
+    width:  40px;
+}
+
+.menuImg {
+    display: block;
+    max-width:  100%;
+    width:  20px;
+    height:  40px;
+    margin: auto;
+}
+
+.menuList:hover {
+    background-color: #e8e8e8;
+    transition:  all ease-in .3s; 
+}
+
+.divider {
+    width:  90%;
+    border:  3px solid #cf9455;
+    border-radius:  10px;
+    margin: auto;
+}
+
+.pageIntroContainer {
+    display: block;
+    position: relative;
+    width:  100%;
+    padding:  15px 10px;
+    text-align: center;
+    background-color: #e8e8e8;
+}
+
+.pageIntroHeading {
+    font-weight:  1000;
+    font-family:  'poppins', sans-serif;
+    font-size:  2em;
+}
+
+.pageIntroHeading h2 {
+    font-weight:  600;
+    font-size: 1em;
+    position: relative;
+    color:  #000;
+}
+
+.pageIntroPara {
+    font-weight:  800;
+    font-family: 'poppins', sans-serif;
+    color: #000;
+}
+
+#rightSection {
+    width:  15%;
+    position: relative;
+}
+
+.mainContent {
+    display: block;
+    width:  100%;
+    height:  100%;
+}
+
+.mainContentContainer {
+    position: relative;
+    display: block;
+}
+
+.descriptContainer {
+    display: block;
+    width:  100%;
+    padding:  10px;
+}
+
+.descriptionHeader {
+    font-family:  'poppins';
+    font-size:  .8em;
+    position: relative;
+    color:  #fff;
+    padding:  10px 0 10px 0;
+}
+
+.line {
+    width:  25%;
+    display: block;
+    border-radius:  10px;
+    border: 2px solid#cf9455;
+}
+
+.videoBox {
+    position: relative;
+    width:  100%;
+}
+
+.videoBoxContainer {
+    justify-content: stretch;
+    display: grid;
+    grid-gap: 7px;
+    grid-template-columns: repeat(auto-fill,minmax(33%, 300px));
+    grid-template-rows: repeat(1, 1fr);
+    width:  99%;
+    padding:  15px;
+    margin: auto;
+    position: relative;
+}
+
+.bar {
+    width: 99%;
+    margin: auto;
+}
+
+ .box {
+     width:  100%;
+     height:  250px;
+     max-height:  300px;
+    position: relative;
+    box-shadow: 0 6px 6px rgb(45 45 45 / 60%), 0 5px 5px rgb(0 0 0 / 23%);
+}
+
+.box > .framer {
+    width: 100%;
+    height: 250px;
+    max-height: 300px;
+    position: relative;
+    border: none;  
+}
+
+
+.subscribeSection {
+    display: block;
+    background-color: #20283a;
+    width:  100%;
+   margin-top:  30px;
+   position: relative;
+   height:  100%;
+   text-align: center;
+   color:  #e3e3e3; 
+}
+
+.subscribeSectionLayer {
+    position: relative;
+    width:  100%;
+    display: block;
+    padding-top:  100px;
+    padding-bottom:  50px;
+}
+
+.subscribeFeed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.newsLetter {
+    width:  60%;
+    position: relative; 
+}
+
+.newsLetterHeading {
+    color: white;
+    display: block;
+    font-family: 'poppins', sans-serif;
+    font-size:  1.4em;
+    padding:  10px 5px 10px 5px;
+}
+
+.feedForm {
+    background-color:  #1e2536;
+    padding-bottom:  10px;
+    padding-top:  10px;
+}
+
+#follow {
+    width:  60%;
+    height:  70px;
+    border-radius:  3px;
+    outline: none;
+    border: none;
+    text-align: center;
+    background-color: inherit;
+    color:  white;
+    font-size: 1em;
+}
+
+#submit {
+    width:  150px;
+    padding:  10px; 
+    height:  70px;
+    border-radius:  3px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color:  #cf9455;
+    color:  white;
+}
+
+
+#submit:hover {
+  background-color: #3f3e3e;
+  transition:  all .3s cubic-bezier(0.8, 0.9, 1, 1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.rightFollowMedia {
+    width:  40%;
+    margin-bottom:  15px;
+   padding-bottom:   20px;
+}
+
+.rightFollowMediaHeader {
+    font-size: 1.2em;
+}
+
+.follow-divider {
+    width:  80%;
+    margin: auto;
+    border: 3px solid #cf9455;
+    border-radius:  5px;
+}
+
+.allRightFollowMediaIcon {
+    padding-top: 15px;
+    padding-bottom:  10px;
+    display: block;
+}
+
+.allRightFollowMediaIconLayer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    width:  60%;
+    margin: auto;
+}
+
+.allRightFollowMediaIconLayer > a  {
+    width:  30px;
+    height:  30px;
+    margin: auto;
+    border-radius:  50%;
+    color: #fff;
+     padding:  2px; 
+    text-align: center;
+    vertical-align: middle;
+    background-color: #3f3e3e;
+    box-shadow: 0 6px 6px rgb(45 45 45 / 60%), 0 5px 5px rgb(0 0 0 / 23%);
+}
+
+.teamContainer {
+    position: relative;
+    width:  100%;
+    margin-top:  40px;
+    height:  100%;
+    padding-top:  20px;
+    padding-bottom:  20px;
+}
+
+.teamContainerLayer {
+    position: relative;
+    width: 100%;
+    font-family: 'poppins','Roboto Mono', monospace;
+    color:  #e3e3e3; 
+}
+
+.teamContainerHeader {
+    font-size: 1.3em;
+    line-height: 2;
+    position: relative;
+    text-align: center;
+}
+
+.runner {
+    position: relative;
+    width:  100%;
+}
+
+.glide_slides {
+    width:  100% !important;
+    display: block;
+    list-style: none;
+    height:  100px;
+}
+
+.glide_slides > .glide_slide {
+    height:  200px;
+    display: block;
+}
+
+.glide_slides > .glide_slide > img {
+    max-width:  100%;
+    height:  auto;
+}
+
+.sectionWrapper {
+    position: relative;
+    display: block;
+}
+
+#rightSection {
+    color:  white;
+    position: relative;
+    display: block;
+    height:  auto;
+}
+
+.videoCard {
+    display: flex;
+    flex-direction: column;
+    width:  100%;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.videoCardHeader {
+    text-align: center;
+    position: relative;
+    font-weight:  normal;
+    font-family: 'poppins', 'Roboto', sans-serif;
+    padding:  10px 0 15px 0;
+}
+
+.boxer {
+    width:  90% !important;
+    margin: auto;
+    height:  auto;
+}
+
+.footer {
+    width:  100%;
+    position: relative;
+    background-color: #414141;
+    margin-top:  10px;
+    font-family: 'poppins', sans-serif, Arial;
+    display: block;
+    padding-top:  10px;
+}
+
+.copyNote {
+    display: block;
+    text-align: center;
+    position: relative;
+    padding:  10px;
+    font-family: 'poppins', sans-serif, Tahoma;
+    font-size: .1.3rem;
+}
+
+

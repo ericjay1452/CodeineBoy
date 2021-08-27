@@ -1,0 +1,320 @@
+@media(min-width : 1070px) {
+    .videoBoxContainer {
+    grid-template-columns: repeat(auto-fill,minmax(33%, 260px));
+    grid-template-rows: repeat(1, 1fr);
+}
+
+}
+
+@media(max-width : 1070px) {
+    .videoBoxContainer {
+    grid-template-columns: repeat(auto-fill,minmax(33%, 240px));
+    grid-template-rows: repeat(1, 1fr);
+}
+
+}
+
+
+
+@media(max-width : 1000px) {
+    #rightSection {
+      display: none;
+    }
+
+    #middleSection {
+        width:  95%;;
+    }
+
+}
+
+@media(max-width : 850px) {
+    .videoBoxContainer {
+    grid-template-columns: repeat(auto-fill,minmax(33%, 340px));
+    grid-template-rows: repeat(1, 1fr);
+}
+
+}
+
+@media(max-width : 800px) {
+    #leftSection {
+    display: none;
+}
+
+#middleSection {
+    width:  100%;
+}
+
+
+
+.bar {
+    width:  100%;
+}
+
+}
+
+@media(max-width : 750px) {
+
+    .videoBoxContainer {
+    grid-template-columns: repeat(auto-fill,minmax(33%, 290px));
+    grid-template-rows: repeat(1, 1fr);
+} 
+
+}
+
+@media(max-width : 645px) {
+
+    .videoBoxContainer {
+    grid-template-columns: repeat(auto-fill,minmax(50%, 40%));
+    grid-template-rows: repeat(1, 1fr);
+} 
+
+.subscribeFeed {
+    flex-direction: column;
+}
+
+.newsLetter {
+    width:  100%;
+    padding-bottom: 30px;
+}
+
+.rightFollowMedia {
+    width:  100%;
+}
+
+}
+
+@media(max-width : 500px) {
+    .videoBoxContainer {
+        grid-template-columns:  repeat(auto-fill,minmax(100%, 100%));
+    }
+
+    .pageIntroHeading h1{
+        font-size:  .8em;
+    }
+
+    .pageIntroHeading h2{
+        font-size:  .6em;
+    }
+
+    .formWrapper,
+    .menuContainerLayer,
+    .divider {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        position: sticky;
+        top:  0;
+        z-index: 500;
+        height:  50px;
+        margin-bottom:  15px;
+    }
+ 
+    .mobileContainer {
+        height: 70px;
+        padding-top:  10px;
+        background-color: #3f3e3e;
+    }
+
+    .mobileHeader {
+        display: flex;
+        position: relative;
+    }
+
+    #Bug {
+        position: relative;
+    width: 50px;
+    display: block;
+    cursor: pointer;
+    height: 50px;
+    margin-right: 3px;
+    text-align: center;
+    z-index: 500;;
+    }
+
+    .burger {
+        position: absolute;
+    left: 50px;
+    top: 0;
+    cursor: pointer;
+    height: inherit;
+    max-width: 100%;
+    text-align: center;
+    }
+
+    .burgerLine {
+        width: 20px;
+    height: 4px;
+    display: block;
+    background: white;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    transform: rotate(0deg);
+    text-align: center
+    }
+
+    .burgerLine::before {
+        content: "";
+        display: block;
+        width: 15px;
+        height: 4px;
+        position: absolute;
+        bottom: -10px;
+        background: inherit;
+        transform: rotate(0deg) translate(0px, 0px);
+        transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .burgerLine::after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 4px;
+        position: absolute;
+        bottom: 10px;
+        background: inherit;
+        transform: rotate(0deg);
+        transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    /* My js effect for rotating my #Bug */
+    .slideIn {
+        transform: rotate(360deg);
+        transition: all ease-in-out .6s;
+    }
+
+    .burgerLine.slideIn::before {
+        transform: rotate(90deg) translate(5px, 5px);
+        transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .burgerLine.slideIn::after {
+        transform: rotate(0deg);
+        transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .listWrapper {
+        position: absolute;
+        z-index: 10;
+        display: block;
+        width: 0%;
+        background: #fff;
+        top: 60px;
+        height: 100vh;
+        transition: all .6s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
+
+
+
+    /*  for extending my listWrapper class width*/
+    .extendWidth {
+        width:  60%;
+        transition: all .6s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
+
+        /* Extending my listWrapper to 100% on mouseover */
+        .wide {
+            width: 100%;
+            transition: width .6s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        }
+
+    .mobileUl {
+        margin-top: -30px;
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: stretch;
+        height: 100%;
+        text-align: left;
+        overflow: auto;
+        width: 100%;
+        left: -1000px;
+        transition: all .6s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
+
+    .extendWidth {
+        left: 0;
+    }
+
+    .mobileList {
+        display: inline-block;
+        padding-right: 10px;
+        padding-top: 15px; 
+        height: 50px;
+    }
+
+    .mobileListItem {
+        padding-left: 4px;
+        color: white;
+        font-size: .8em;
+        font-weight: 800;
+    }
+
+    .mobileListItem:hover,
+   .mobileList:hover {
+    background: #e8e8e8;
+    transition: .3s ease-in-out background;
+    color: black;
+   }
+
+    .menuIcon {
+        width:  15px;
+        height:  15px;
+        display: inline-block;
+    }
+
+
+
+    .panel {
+        font-weight: normal;
+        font-family: 'poppins', sans-serif;
+        display: inline-block;
+        color: black;
+        width: 90%;
+        text-align: right;
+     
+    }
+
+    .siteNam {
+        position: relative;
+        margin: auto;
+    }
+
+    .siteNamContainer {
+        position: relative;
+        display: block;
+    }
+
+    .siteNamContainer > a {
+        color:  white;
+        font-family: 'poppins', sans-serif;
+    }
+
+    .searcher {
+        position: relative;
+        align-self: flex-end;
+    }
+
+    .mobileAnchor { 
+        padding: 10px;
+        margin-right: 5px;
+        cursor: pointer;
+        color: white;
+        transition: .6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.copyNote {
+    display: block;
+    position: relative;
+    font-family: 'poppins', sans-serif, Tahoma;
+    text-align: center;
+    font-weight: normal;
+    font-size: .6em;
+    padding: 8px;
+}
+
+
+} 
